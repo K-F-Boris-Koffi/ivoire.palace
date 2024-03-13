@@ -1,0 +1,809 @@
+
+/* police personnaliser */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Noto+Serif+Makasar&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+/* Style >Global */
+
+
+    *, ::before, ::after
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html
+    {
+        font-size: 62.5%;
+    }
+
+    body
+    {
+        height: 100vh;
+        width: 100%;
+        font-size: 2rem;
+        /* background-color: #412424; */
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    li
+    {
+        list-style: none;
+    }
+
+    button
+    {
+        cursor: pointer;
+    }
+
+    input
+    {
+        outline: none;
+        border: none;
+    }
+
+    /*  */
+#nav_btn
+{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    border: none;
+    background: url('images/nav_btn_icon.png') no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    /* z-index: 200; */
+}
+
+button.nav_btn_icon2#nav_btn
+{
+    background: url('images/nav_btn_icon2.png') no-repeat;
+    background-size: cover;
+}
+
+/* .nav_btn_icon
+{
+    background: url('images/nav_btn_icon.png') no-repeat;
+} */
+
+/* Style header */
+
+header
+{
+    position: relative;
+    padding: 1rem 2rem;
+    height: 9rem;
+    /* border: 1px solid #25b7d1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* column-gap: 10rem; */
+    row-gap: 1rem;
+    cursor: default;
+    /* background-color: #8b5e80; */
+    /* transition: all 0.2s; */
+}
+
+/* Style h1 */
+
+header h1
+{
+    /* border: 1px solid #b3ff00; */
+    font-size: 3.3rem;
+    text-transform: capitalize;
+    font-family: 'Noto Serif Makasar', serif;
+    transition: all 0.3s ease-out;
+}
+
+header h1 span
+{
+    color: #4dbdae;
+}
+
+/* Style barre de navigation */
+
+header nav
+{
+    /* border: 1px solid #6fcfdb; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    overflow: hidden;
+}
+
+.nav_anim
+{
+    transition: height 0.3s;
+}
+
+header nav ul
+{
+    /* border: 1px solid #6fcfdb; */
+    height: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+ul li
+{
+    /* border: 1px solid #000; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #3b3f4d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+ul li a:hover
+{
+    color: #4dbdae;
+}
+
+header ul li:last-child
+{
+    background-color: #4dbdae;
+    padding: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+}
+
+header ul li:last-child:hover
+{
+    background-color: #000;
+}
+
+header ul li:last-child a
+{
+    color: #fff;
+}
+
+/* Style du contenu principal */
+
+main section
+{
+    padding: 0 3rem;
+}
+
+/* Style General des sections */
+
+
+main .section_text-media
+{
+    gap: 5rem;
+}
+
+main  div.box_paragraphe
+{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+main  div.box_paragraphe p
+{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+main  div.box_paragraphe h3
+{
+    color: #4dbdae; 
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main  div.box_paragraphe h3 + p
+{
+    font-size: 3.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #2c2c35;
+}
+
+main div.box_paragraphe p em
+{
+    font-style: normal;
+}
+
+main  div.box_paragraphe p em span
+{
+    color: #4dbdae;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/* Style de la section bannière */
+
+main #banniere
+{
+    /* border: 1px solid #000; */
+    height: 48rem;
+    background: linear-gradient(#0a2633ad, #0a2633ad), url("images/bg_img.jpg") center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    color: #fff;
+    cursor: default;
+}
+
+main #banniere p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+main #banniere h2
+{
+    font-weight: 300;
+    font-size: 4rem;
+    text-align: center;
+}
+
+main #banniere a
+{
+    position: relative;
+    border: 2px solid #4dbdae;
+    width: fit-content;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+}
+
+main #banniere a::before
+{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s;
+    background-color: #4dbdae;
+}
+
+main #banniere a:hover::before
+{
+    width: 100%;
+}
+
+
+/* Style de la section du formulaire */
+
+main #form_section
+{
+    height: fit-content;
+    padding: 3rem 2rem;
+    margin: 5rem 0;
+    color: #2c2c35;
+}
+
+main #form_section form
+{
+    /* border: 3px solid #eeff00; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+main #form_section form div
+{
+    display: flex;
+    flex-direction: column;
+    height: 7.5rem;
+    width: 22rem;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+main #form_section form div label
+{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+main #form_section form div input
+{
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.6rem;
+    border: 1px solid #535151;
+}
+
+main #form_section form div input[type="submit"]
+{
+    background-color: #4dbdae;
+    width: fit-content;
+    padding: 1rem;
+    color: #fff;
+    border: none;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main #form_section form div input[type="submit"]:hover
+{
+    background-color: #ffffff;
+    border: 1px solid #4dbdae;
+    color:  #4dbdae;
+    box-shadow: 0 0 0.8rem 0.1rem #4dbdaebc;
+
+}
+
+main #form_section form :nth-child(4)
+{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Style de la section  à propos de nous */
+
+main #a_propos
+{
+    /* height: 35rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin: 5rem 0;
+    gap: 14rem;
+}
+
+/* Style box du paragraphe */
+
+main #a_propos > div .box_paragraphe
+{
+    height: fit-content; 
+}
+
+
+/* Style box des images */
+
+main #a_propos > div.box_images
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 50rem;
+    height: 35rem;
+}
+
+main #a_propos .box_images > div
+{
+    display: flex;
+    width: 100%;
+}
+
+main #a_propos .box_images > div.img_g1 
+{
+    /* border: 1px solid #ff0000; */
+    /* background-color: #573a3a; */
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img_g2
+{
+    box-shadow: 0.5rem 0.5rem 0.8rem 0.2rem #646464;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+main #a_propos .box_images > div.img_g1 div
+{
+    /* border: 1px solid #bbff00; */
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.5s;
+    box-shadow: 0.5rem 0.5rem 0.8rem 0.2rem #646464;
+}
+
+main #a_propos .box_images > div img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main #a_propos .box_images > div.img_g2:hover, main #a_propos .box_images > div.img_g1 div:hover
+{
+    transform: scale(1.1);
+}
+
+
+/* Style de la section  Temoignages */
+
+main #section_temoignages
+{
+    /* height: 45rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    padding: 4em 2rem;
+    margin: 5rem 0;
+    /* border: 1px solid #ff0000; */
+}
+
+main #section_temoignages div
+{
+    width: 38%;
+    height: 48rem;
+    /* border: 1px solid #1fa197; */
+}
+
+main #section_temoignages div.box_images
+{
+    overflow: hidden;
+    border-radius: 25px;
+    min-width: 40rem;
+}
+
+main #section_temoignages div.box_images img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main #section_temoignages div.box_paragraphe
+{
+    width: 45%;
+    /* border: 1px solid #00b7ff; */
+    height: fit-content;
+    min-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    border-radius: 25px;
+
+}
+
+main #section_temoignages div.box_paragraphe p
+{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+main #section_temoignages div.box_paragraphe h3 + p
+{
+    font-size: 3.5rem;
+}
+
+
+@media screen and (max-width: 1085px)
+{
+    header
+    {
+        height: 12rem;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul
+    {
+        height: 90%;
+    }
+}
+
+
+@media screen and (max-width: 838px)
+{
+    main .section_text-media
+    {
+        flex-direction: column;
+        height: fit-content;
+        overflow: visible;
+    }
+    main > section.section_text-media > div
+    {
+        width: 80%!important;
+    }
+
+    main #a_propos
+    {
+        gap: 4rem;
+    }
+
+    main #a_propos .box_images
+    {
+    height: 42vw!important;
+    width: 65%!important;
+    }
+
+    main #section_temoignages div.box_paragraphe
+    {
+        justify-content: start;
+    }
+
+
+    main section.interface_jeu  > h1
+    {
+        top: 12%;
+    }
+    main section.interface_jeu .btns_box
+    {
+        bottom: 7%;
+    }
+}
+
+
+@media screen and (max-width: 800px)
+{
+   
+    html
+    {
+        font-size: 52.5%;
+
+    }
+
+}
+
+@media screen and (max-width: 680px)
+{
+   
+    html
+    {
+        font-size: 42.5%;
+
+    }
+    main #a_propos .box_images
+    {
+    height: 50vw!important;
+    width: 75%!important;
+    }
+    main #section_temoignages div.box_paragraphe p, main div.box_paragraphe p
+    {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 555px)
+{
+    header
+    {
+        position: relative;
+        justify-content: center;
+        /* background-color: rgb(148, 55, 55); */
+    }
+    header h1
+    {
+        font-size: 4rem;
+    }
+    #nav_btn
+    {
+        display: block;
+    }
+    .nav_btn_active
+    {
+        height: 0%;
+    }
+    header nav
+    {
+        position: absolute;
+        top: 12rem;
+        border-bottom: 3px solid #4dbdae;
+        width: 100%;
+        height: 47rem;
+        background-color: #12121b;
+        z-index: 10;
+    }
+    header nav ul
+    {
+        flex-direction: column;
+        display: block;
+        /* justify-content: center; */
+        gap: 0rem;
+        height: 100%;
+        padding: 2rem 0;
+        /* border: 1px solid rgb(255, 0, 0); */
+        width: 100%;
+    }
+    header nav ul li
+    {
+        border-bottom: 1px solid #c9dde4;
+        /* padding-bottom: 2.5rem; */
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    header ul li:last-child
+    {
+        transition: none;
+
+    }
+    header ul li:last-child
+    {
+        background-color: inherit;
+        padding: 0;
+    }
+    header ul li a:last-child
+    {
+        color: #c9dde4;
+    }
+    header ul li a:last-child:hover
+    {
+        text-decoration: underline;
+    }*
+    header ul li:last-child:hover
+    {
+        background-color: initial;
+    }
+
+}
+
+@media screen and (max-width: 425px)
+{
+   
+    html
+    {
+        font-size: 38.5%;
+
+    }
+
+}
+
+@media screen and (max-width: 375px)
+{
+   
+    html
+    {
+        font-size: 35.5%;
+
+    }
+
+}
+
+@media screen and (max-width: 320px)
+{
+   
+    html
+    {
+        font-size: 30.5%;
+
+    }
+
+}
+
+
+/* Style de la section des i,ages de logo */
+
+#section_box_logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ff0000; */
+    height: fit-content;
+    padding: 2rem 3rem;
+}
+
+#section_box_logo div.container
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    row-gap: 4rem;
+    flex-wrap: wrap;
+    /* border: 1px solid #0008ff; */
+}
+
+#section_box_logo div.container div
+{
+    width: 18rem;
+    height: 15rem;
+    box-shadow: 0 0 0.8rem 0.4rem #4f4d4d91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer
+{
+    position: relative;
+    font-family: "Roboto", 'Times New Roman', serif;
+    font-weight: 200;
+    margin: 5rem 0;
+    border: 1px solid #000;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.5rem;
+    padding: 2.5rem;
+    background-color: #12121b;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+}
+
+footer p
+{
+    height: 100%;
+    min-width: 20rem;
+    width: 20%;
+    line-height: 2.8rem;
+    color: #e6e8ee;
+    font-size: 1.8rem;
+
+}
+
+footer h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 8%;
+    color: #505e61;
+
+}
+
+footer span
+{
+    color: #4dbdae;
+}
+
+footer p a
+{
+    color: #4dbdae;
+
+}
+
+
+/*  */
+
+.displayNone
+{
+    display: none;
+}
