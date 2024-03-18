@@ -54,7 +54,7 @@
 {
     display: none;
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     top: 4rem;
     border: none;
     background: url('images/nav_btn_icon.png') no-repeat;
@@ -104,6 +104,7 @@ header h1
     font-family: 'Noto Serif Makasar', serif;
     transition: all 0.3s ease-out;
 }
+
 
 header h1 span
 {
@@ -329,6 +330,7 @@ main #form_section form div
     flex-direction: column;
     height: 7.5rem;
     width: 22rem;
+    min-width: 202px;
     justify-content: space-between;
     align-items: center;
     /* gap: 1rem; */
@@ -344,6 +346,7 @@ main #form_section form div input
 {
     width: 100%;
     height: 3.5rem;
+    min-height: 32px;
     font-size: 1.8rem;
     border-radius: 0.6rem;
     border: 1px solid #535151;
@@ -352,12 +355,12 @@ main #form_section form div input
 main #form_section form div input[type="submit"]
 {
     background-color: #4dbdae;
-    width: fit-content;
+    width: 100%;
     padding: 1rem;
     color: #fff;
     border: none;
     align-self: flex-end;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -679,6 +682,16 @@ main #section_temoignages div.box_paragraphe h3 + p
         background-color: initial;
     }
 
+    main #bannniere
+    {
+        height: 52rem;
+
+    }
+    main #form_section form div
+    {
+        width: 26rem;
+    }
+
 }
 
 @media screen and (max-width: 425px)
@@ -686,7 +699,7 @@ main #section_temoignages div.box_paragraphe h3 + p
    
     html
     {
-        font-size: 38.5%;
+        font-size: 40.5%;
 
     }
 
@@ -697,7 +710,7 @@ main #section_temoignages div.box_paragraphe h3 + p
    
     html
     {
-        font-size: 35.5%;
+        font-size: 39.5%;
 
     }
 
@@ -708,7 +721,7 @@ main #section_temoignages div.box_paragraphe h3 + p
    
     html
     {
-        font-size: 30.5%;
+        font-size: 38.5%;
 
     }
 
